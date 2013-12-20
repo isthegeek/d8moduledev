@@ -1,0 +1,5 @@
+name: Hello World!
+type: module
+description: 'Shows Hello World.'
+version: 1.0
+core: 8.x

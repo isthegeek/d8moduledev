@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Simple Hello World module.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function helloworld_menu() {
+  $items['helloworld'] = array(
+    'title' => 'My Page!',
+    'description' => 'Page which contains hello world.',
+    'route_name' => 'helloworld.hello_world',
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_permission().
+ */
+function helloworld_permission() {
+  return array(
+    'view helloworld' => array(
+      'title' => t('Access the HelloWorld page'),
+    ),
+  );
+}
